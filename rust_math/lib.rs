@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 use std::ops::*;
 use num_traits::{*, real::Real};
 
@@ -11,10 +12,6 @@ trait Complex<T : Num> {
 }
 
 impl<T> Complex<T> for T where T: Float, T: FloatConst, T: Signed {
-    fn conj(self) -> Self {
-        self
-    }
-
     fn abs(self) -> T {
         self.abs()
     }
